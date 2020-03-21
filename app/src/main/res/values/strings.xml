@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">CoVid19</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string-array name="questions">
+
+    </string-array>
+    <string name="question1">Qu’est-ce qu’un coronavirus ?</string>
+    <string name="question2">Quels sont les symptômes de la COVID-19 ?</string>
+    <string name="question3">Comment la COVID-19 se propage-t-elle ?</string>
+    <string name="question4">Comment puis-je me protéger et éviter que la maladie ne se propage ?</string>
+    <string name="question5">Quelle est la probabilité de contracter la COVID-19 ?</string>
+    <string name="question6">La COVID-19 doit-elle m’inquiéter ?</string>
+    <string name="question7">Qui risque d’être atteint d’une forme grave de la maladie ?</string>
+    <string name="question8">Les antibiotiques sont-ils efficaces pour prévenir ou traiter la COVID-19 ?</string>
+    <string name="question9">La COVID-19 est-elle la même maladie que le SRAS?</string>
+    <string name="question10">Combien de temps dure la période d’incubation de la COVID-19 ?</string>
+    <string name="question11">Les êtres humains peuvent-ils contracter la COVID-19 à partir d’une source animale ?</string>
+    <string name="question12">Mon animal domestique peut-il me transmettre la COVID-19 ?</string>
+    <string name="question13">Combien de temps le virus peut-il survivre sur les surfaces ?</string>
+    <string name="question14">Y a-t-il des choses à ne pas faire ?</string>
+
+    <string name="answer1">Les coronavirus forment une vaste famille de virus qui peuvent être pathogènes chez l’homme et chez l’animal. On sait que, chez l’être humain, plusieurs coronavirus peuvent entraîner des infections respiratoires dont les manifestations vont du simple rhume à des maladies plus graves comme le syndrome respiratoire du Moyen-Orient (MERS) et le syndrome respiratoire aigu sévère (SRAS). Le dernier coronavirus qui a été découvert est responsable de la maladie à coronavirus 2019 (COVID-19).</string>
+    <string name="answer2">Les symptômes les plus courants de la COVID-19 sont la fièvre, la fatigue et une toux sèche. Certains patients présentent des douleurs, une congestion nasale, un écoulement nasal, des maux de gorge ou une diarrhée. Ces symptômes sont généralement bénins et apparaissent de manière progressive. Certaines personnes, bien qu’infectées, ne présentent aucun symptôme et se sentent bien. La plupart (environ 80 %) des personnes guérissent sans avoir besoin de traitement particulier. Environ une personne sur six contractant la maladie présente des symptômes plus graves, notamment une dyspnée. Les personnes âgées et celles qui ont d’autres problèmes de santé (hypertension artérielle, problèmes cardiaques ou diabète) ont plus de risques de présenter des symptômes graves. Toute personne qui a de la fièvre, qui tousse et qui a des difficultés à respirer doit consulter un médecin. </string>
+    <string name="answer3">La COVID-19 est transmise par des personnes porteuses du virus. La maladie peut se transmettre d’une personne à l’autre par le biais de gouttelettes respiratoires expulsées par le nez ou par la bouche lorsqu’une personne tousse ou éternue. Ces gouttelettes peuvent se retrouver sur des objets ou des surfaces autour de la personne en question. On peut alors contracter la COVID-19 si on touche ces objets ou ces surfaces et si on se touche ensuite les yeux, le nez ou la bouche. Il est également possible de contracter la COVID-19 en inhalant des gouttelettes d’une personne malade qui vient de tousser ou d’éternuer. C’est pourquoi il est important de se tenir à plus d’un mètre d’une personne malade.
+
+L’OMS examine les travaux de recherche en cours sur la manière dont la COVID-19 se propage et elle continuera à communiquer les résultats actualisés.</string>
+    <string name="answer4">Mesures de protection pour tous
+
+Tenez-vous au courant des dernières informations sur la flambée de COVID-19, disponibles sur le site Web de l’OMS et auprès des autorités de santé publique nationales et locales. Des cas de COVID-19 se sont produits dans de nombreux pays et plusieurs pays ont été touchés par des flambées. En Chine et dans certains autres pays, les autorités sont parvenues à ralentir ou à enrayer la progression de la flambée. Toutefois, l’évolution de la situation est imprévisible et vous devez donc vous tenir régulièrement informé.
+
+Vous pouvez réduire le risque d’être infecté ou de propager la COVID-19 en prenant quelques précautions simples :
+
+    Se laver fréquemment et soigneusement les mains avec une solution hydroalcoolique ou à l’eau et au savon.
+
+Pourquoi ? Se laver les mains avec une solution hydroalcoolique ou à l’eau et au savon tue le virus s’il est présent sur vos mains.
+
+    Maintenir une distance d’au moins un mètre avec les autres personnes qui toussent ou qui éternuent.
+
+Pourquoi ? Lorsqu’une personne tousse ou éternue, elle projette de petites gouttelettes qui peuvent contenir le virus. Si vous êtes trop près, vous pouvez inhaler ces gouttelettes et donc le virus responsable de la COVID-19 si la personne qui tousse en est porteuse.
+
+    Éviter de se toucher les yeux, le nez et la bouche.
+
+Pourquoi ? Les mains sont en contact avec de nombreuses surfaces qui peuvent être contaminées par le virus. Si vous vous touchez les yeux, le nez ou la bouche, le virus peut pénétrer dans votre organisme et vous pouvez tomber malade.
+
+    Veillez à respecter les règles d’hygiène respiratoire et à ce que les personnes autour de vous en fassent autant. En cas de toux ou d’éternuement, il faut se couvrir la bouche et le nez avec le pli du coude, ou avec un mouchoir et jeter le mouchoir immédiatement après.
+
+Pourquoi ? Les gouttelettes respiratoires propagent des virus. En respectant les règles d’hygiène respiratoire, vous protégez les personnes autour de vous de virus tels que ceux responsables du rhume, de la grippe ou de la COVID-19.
+
+    Si vous ne vous sentez pas bien, restez chez vous. En cas de fièvre, de toux et de dyspnée, consultez un médecin après l’avoir appelé. Suivez les instructions des autorités sanitaires locales.
+
+Pourquoi ? Ce sont les autorités nationales et locales qui disposent des informations les plus récentes sur la situation dans la région où vous vous trouvez. Si vous l’appelez, votre médecin pourra vous orienter rapidement vers l’établissement de santé le plus adapté. En outre, cela vous protègera et évitera la propagation de virus et d’autres agents infectieux.
+
+    Informez-vous constamment pour savoir quelles sont les villes ou les zones où la COVID-19 se propage à grande échelle. Si possible, évitez de voyager, en particulier si vous êtes âgé ou diabétique ou si vous avez une maladie cardiaque ou pulmonaire.
+
+Pourquoi ? Le risque de contracter la COVID-19 est plus élevé dans ces régions.
+Mesures de protection pour les personnes qui se trouvent ou qui se sont récemment rendues (au cours des 14 derniers jours) dans des régions où la COVID-19 se propage.
+
+    Suivez les conseils présentés ci-dessus (Mesures de protection pour tous)
+
+    Si vous commencez à vous sentir mal et même si vous n’avez que des symptômes bénins (céphalées, légère fièvre (à partir de 37,3 °C) et écoulement nasal modéré), restez chez vous jusqu’à la guérison. Si vous avez absolument besoin que quelqu’un vienne vous ravitailler ou si vous devez sortir, par exemple pour acheter à manger, portez un masque pour éviter d’infecter d’autres personnes.
+
+Pourquoi ? Éviter d’entrer en contact avec d’autres personnes et de se rendre dans des établissements de santé permettra à ces établissements de fonctionner plus efficacement et vous protègera, ainsi que les autres personnes, de la COVID-19 et d’autres maladies virales.
+
+    En cas de fièvre, de toux et de dyspnée, consultez un médecin sans tarder, car il peut s’agir d’une infection respiratoire ou d’une autre affection grave. Appelez votre médecin et indiquez-lui si vous avez récemment voyagé ou été en contact avec des voyageurs.
+
+Pourquoi ? Si vous l’appelez, votre médecin pourra vous orienter rapidement vers l’établissement de santé le plus adapté. En outre, cela vous protègera et évitera la propagation de la COVID-19 et d’autres maladies virales.</string>
+    <string name="answer5">Le risque dépend de l’endroit où vous habitez et, plus précisément, de la présence ou non d’une flambée.
+
+Pour la plupart des gens, à la plupart des endroits, le risque de contracter la COVID-19 reste faible. Cependant, la propagation d’intensifie désormais dans certaines villes ou régions. Pour les personnes qui y habitent ou s’y rendent, le risque de contracter la COVID-19 est plus élevé. Les gouvernements et les autorités sanitaires prennent des mesures énergiques chaque fois qu’un nouveau cas de COVID-19 est identifié. Respectez les restrictions locales aux voyages, aux déplacements ou aux grands rassemblements. En participant à ces efforts de lutte contre la maladie, vous réduisez le risque de contracter ou de propager la COVID-19.
+
+Les flambées de COVID-19 peuvent être endiguées et la transmission peut être enrayée, comme on l’a vu en Chine et dans certains autres pays. Malheureusement, de nouvelles flambées apparaissent rapidement. Il est important de connaître la situation là où vous êtes ou là où vous comptez aller. L’OMS publie quotidiennement des bulletins de situation. Vous pouvez les consulter à l’adresse https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/. </string>
+    <string name="answer6">La COVID-19 est généralement bénigne, en particulier chez l’enfant et le jeune adulte, mais elle peut aussi être grave : 1 malade sur 5 doit être hospitalisé. Il est donc tout à fait normal de s’inquiéter des conséquences de la flambée de COVID-19 pour soi-même et pour ses proches.
+
+Il est possible d’apaiser son inquiétude en prenant des mesures pour se protéger et protéger ses proches et son entourage. Tout d’abord, il faut se laver régulièrement et soigneusement les mains et respecter les règles d’hygiène respiratoire. Deuxièmement, il faut se tenir au courant de la situation et suivre les conseils des autorités sanitaires locales, notamment en ce qui concerne les restrictions aux voyages, aux déplacements et aux rassemblements. Pour plus d’informations sur les moyens de se protéger, consulter : https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public. </string>
+    <string name="answer7">Même si nous devons encore approfondir nos connaissances sur la façon dont la COVID-19 affecte les individus, jusqu’à présent, les personnes âgées et les personnes déjà atteintes d’autres maladies (comme l’hypertension artérielle, les maladies pulmonaires, le cancer, le diabète ou les cardiopathies) semblent être gravement atteintes plus souvent que les autres.</string>
+    <string name="answer8">Non, les antibiotiques n’agissent pas contre les virus, mais seulement contre les infections bactériennes. La COVID-19 étant due à un virus, les antibiotiques sont inefficaces. Ils ne doivent pas être utilisés comme moyen de prévention ou de traitement de la COVID-19. Ils doivent être utilisés seulement sur prescription médicale pour traiter une infection bactérienne.</string>
+    <string name="answer9">Non, le virus responsable de la COVID-19 et celui à l’origine du syndrome respiratoire aigu sévère (SRAS) sont génétiquement liés mais ils sont différents. Le SRAS est plus mortel mais beaucoup moins infectieux que la COVID-19. Il n’y a pas eu de flambée de SRAS dans le monde depuis 2003.</string>
+    <string name="answer10">La période d’incubation est le temps qui s’écoule entre l’infection et l’apparition des symptômes de la maladie. On estime actuellement que la période d’incubation de la COIVD-19 dure de 1 à 14 jours et le plus souvent autour de cinq jours. Ces estimations seront actualisées à mesure que de nouvelles données seront disponibles.</string>
+    <string name="answer11">Les coronavirus sont une grande famille de virus couramment présents chez les chauves-souris et chez d’autres animaux. Occasionnellement ces virus infectent des êtres humains qui peuvent à leur tour propager l’infection. Ainsi, le SARS-CoV est associé aux civettes tandis que le MERS-CoV est transmis par les dromadaires. Les sources animales éventuelles de la COVID-19 n’ont pas encore été confirmées.
+
+Pour se protéger, par exemple lorsque l’on va sur des marchés d’animaux vivants, il faut éviter le contact direct avec les animaux et les surfaces en contact avec les animaux et toujours respecter les règles relatives à la sécurité sanitaire des aliments. Il faut manipuler la viande crue, le lait et les abats avec précaution pour éviter de contaminer les aliments qui ne sont pas destinés à être cuits et il faut s’abstenir de consommer des produits d’origine animale crus ou mal cuits.</string>
+    <string name="answer12">Il y a eu un cas d’infection chez un chien à Hong Kong mais, à ce jour, rien ne prouve que les animaux de compagnie, tels que les chiens ou les chats, peuvent transmettre la COVID-19. La maladie se transmet principalement par les gouttelettes expulsées par les personnes infectées quand elles toussent, éternuent ou parlent. Pour vous protéger, lavez-vous les mains fréquemment et soigneusement.
+
+L’OMS continue à suivre les derniers travaux de recherche sur ce sujet et d’autres questions relatives à la COVID-19 et publiera des informations actualisées à mesure que de nouvelles données seront disponibles.</string>
+    <string name="answer13">On ne sait pas avec certitude combien de temps le virus responsable de la COVID-19 survit sur les surfaces mais il semble qu’il se comporte comme les autres coronavirus. Les études (et les informations préliminaires sur la COVID-19) tendent à montrer que les coronavirus peuvent persister sur les surfaces quelques heures à plusieurs jours. Ceci peut dépendre de différents paramètres (p. ex. le type de surface, la température ou l’humidité ambiante).
+
+Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désinfectant ordinaire pour tuer le virus, vous protéger et protéger les autres. Lavez-vous les mains avec une solution hydroalcoolique ou à l’eau et au savon. Évitez de vous toucher les yeux, la bouche ou le nez.</string>
+    <string name="answer14">Les mesures ci-après NE SONT PAS efficaces contre la COVID-19 et peuvent même être dangereuses :
+
+    Fumer
+    Porter plusieurs masques à la fois
+    Prendre des antibiotiques</string>
+</resources>
