@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -32,6 +34,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.github.ybq.android.spinkit.style.Wave;
 import com.shid.covid19.Database.AppDatabase;
 import com.shid.covid19.Model.Countries;
 import com.shid.covid19.R;
@@ -40,6 +43,8 @@ import com.shid.covid19.ui.home.HomeViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
 import static com.shid.covid19.Utils.Constant.ERROR;
@@ -62,7 +67,9 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
     private Toolbar toolbar;
     private SearchView searchView;
     Countries pays;
+    String test;
     AppDatabase database;
+
 
     private DashboardViewModel dashboardViewModel;
 
@@ -73,6 +80,11 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         setUI(root);
+
+
+        // Wave wave = new Wave();
+        //progressBar.setIndeterminateDrawable(wave);
+
         database = AppDatabase.getInstance(getContext());
         /*
         dashboardViewModel.getCountries().observe(getViewLifecycleOwner(), new Observer<List<Countries>>() {
@@ -86,7 +98,10 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         dashboardViewModel.getCountries().observe(getViewLifecycleOwner(), new Observer<List<Countries>>() {
             @Override
             public void onChanged(List<Countries> countries) {
+
+
                 setUiBasedOnStatus(DashboardViewModel.status);
+
                 if (countries != null) {
                     countriesList = countries;
                     adapter.setClips(countriesList);
@@ -131,6 +146,7 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         });
 
         searchView.setQueryHint("Recherche...");
+        //searchView.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -142,21 +158,30 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
 
                         //searchList = countriesList;
                         searchList.clear();
-                        String formatQuery = query.substring(0, 1).toUpperCase() + query.substring(1).toLowerCase();
-                        pays = database.coronaDAO().loadCountry(formatQuery);
+                        //String formatQuery = query.substring(0, 1).toUpperCase() + query.substring(1).toLowerCase();
+                        String word = capitalizeString(query);
 
+                        // pays = database.coronaDAO().loadCountry(word);
+
+
+                        searchList = database.coronaDAO().loadSpecificCountries(word);
+
+/*
                         if (pays != null) {
                             searchList.add(pays);
                         }
+
+ */
 
                     }
                 });
                 mHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        if (pays == null) {
+                        if (searchList == null) {
                             Toast.makeText(getContext(), "mauvaise entrée", Toast.LENGTH_LONG).show();
                         } else {
+
                             adapter.setClips(searchList);
                         }
                     }
@@ -169,6 +194,9 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
             @Override
             public boolean onQueryTextChange(String newText) {
                 //adapter.filter(newText);
+                if (newText.length() == 0) {
+                    adapter.setClips(countriesList);
+                }
 
                 return true;
             }
@@ -185,6 +213,20 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
 
          */
         return root;
+    }
+
+    public static String capitalizeString(String string) {
+        char[] chars = string.toLowerCase().toCharArray();
+        boolean found = false;
+        for (int i = 0; i < chars.length; i++) {
+            if (!found && Character.isLetter(chars[i])) {
+                chars[i] = Character.toUpperCase(chars[i]);
+                found = true;
+            } else if (Character.isWhitespace(chars[i]) || chars[i] == '.' || chars[i] == '\'') { // You can add other chars here
+                found = false;
+            }
+        }
+        return String.valueOf(chars);
     }
 
     private void setUI(View root) {

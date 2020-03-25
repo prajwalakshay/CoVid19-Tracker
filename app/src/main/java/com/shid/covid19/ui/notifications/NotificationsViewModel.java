@@ -33,17 +33,17 @@ public class NotificationsViewModel extends AndroidViewModel {
         Information information5 = new Information(getApplication().getString(R.string.question5),
                 getApplication().getString(R.string.answer5));
         Information information6 = new Information(getApplication().getString(R.string.question6),
-                getApplication().getString(R.string.answer7));
+                getApplication().getString(R.string.answer6));
         Information information7 = new Information(getApplication().getString(R.string.question7),
-                getApplication().getString(R.string.answer8));
+                getApplication().getString(R.string.answer7));
         Information information8 = new Information(getApplication().getString(R.string.question8),
-                getApplication().getString(R.string.answer9));
+                getApplication().getString(R.string.answer8));
         Information information9 = new Information(getApplication().getString(R.string.question9),
-                getApplication().getString(R.string.answer10));
+                getApplication().getString(R.string.answer9));
         Information information10 = new Information(getApplication().getString(R.string.question10),
-                getApplication().getString(R.string.answer11));
+                getApplication().getString(R.string.answer10));
         Information information11 = new Information(getApplication().getString(R.string.question11),
-                getApplication().getString(R.string.answer12));
+                getApplication().getString(R.string.answer11));
         Information information12 = new Information(getApplication().getString(R.string.question12),
                 getApplication().getString(R.string.answer12));
         /*

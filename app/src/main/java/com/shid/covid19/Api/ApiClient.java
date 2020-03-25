@@ -1,6 +1,7 @@
 package com.shid.covid19.Api;
 
 import java.security.cert.CertificateException;
+import java.util.concurrent.Executors;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;

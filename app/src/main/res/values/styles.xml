@@ -17,6 +17,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundColor">#000000</item>
         <item name="cardGround">#424242</item>
+        <item name="android:divider">#ffffff</item>
         <item name="textColor">#ffffff</item>
         <item name="tintColor">#ffffff</item>
         <item name="buttonColor">#2196F3</item>

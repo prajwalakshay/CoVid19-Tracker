@@ -35,6 +35,9 @@ public interface CoronaDAO {
     @Query("SELECT * FROM countries WHERE country = :country ")
     Countries loadCountry(String country);
 
+    @Query("SELECT * FROM countries WHERE country LIKE '%' || :country || '%' ")
+    List<Countries> loadSpecificCountries(String country);
+
     @Query("DELETE FROM countries")
     public void deleteTableCountries();
 
