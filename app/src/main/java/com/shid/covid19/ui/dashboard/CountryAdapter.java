@@ -10,11 +10,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.shid.covid19.Model.Countries;
 import com.shid.covid19.R;
+import com.shid.covid19.Utils.CountriesDiffCallback;
 
 
 import java.util.ArrayList;
@@ -66,6 +68,16 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
+    }
+
+    public void updateEmployeeListItems(List<Countries> listOfCountries) {
+        final CountriesDiffCallback diffCallback = new CountriesDiffCallback(this.countries, listOfCountries);
+        final DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(diffCallback);
+
+        this.countries.clear();
+        this.countries.addAll(listOfCountries);
+        diffResult.dispatchUpdatesTo(this);
+
     }
 
     /**

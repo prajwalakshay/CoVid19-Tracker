@@ -25,8 +25,8 @@ public class DashboardViewModel extends AndroidViewModel {
 
     private MutableLiveData<String> mText;
     private LiveData<List<Countries>> countriesListLiveData;
-    private MutableLiveData<List<Countries>> listOfCountries;
-    private List<Countries> list;
+    //private MutableLiveData<List<Countries>> listOfCountries;
+    //private List<Countries> list;
     private LiveData<Countries> countryLiveData;
     public static String country_chosen;
     public static String status;
@@ -36,10 +36,20 @@ public class DashboardViewModel extends AndroidViewModel {
 
     public DashboardViewModel(Application application) {
         super(application);
-        database = AppDatabase.getInstance(this.getApplication());
-        listOfCountries = new MutableLiveData<>();
-        countriesListLiveData = database.coronaDAO().loadCountries();
-        getListOfCountries();
+
+        AppExecutor appExecutor = AppExecutor.getInstance();
+        appExecutor.diskIO().execute(new Runnable() {
+            @Override
+            public void run() {
+                database = AppDatabase.getInstance(application);
+                //listOfCountries = new MutableLiveData<>();
+                getListOfCountries();
+                countriesListLiveData = database.coronaDAO().loadCountries();
+
+            }
+        });
+
+
     }
 
     public LiveData<List<Countries>> getCountries() {
@@ -55,7 +65,8 @@ public class DashboardViewModel extends AndroidViewModel {
         return countriesListLiveData;
     }
 
-    public LiveData<List<Countries>> getListOfCountries() {
+    public void getListOfCountries() {
+
         status = "";
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         Call<List<Countries>> callTotal = apiInterface.getAllCountries();
@@ -65,7 +76,7 @@ public class DashboardViewModel extends AndroidViewModel {
                 if (response.isSuccessful() && response.body() != null) {
                     status = Constant.SUCCESS;
                     //list = response.body();
-                    listOfCountries.postValue(response.body());
+                   // listOfCountries.postValue(response.body());
                     AppExecutor appExecutor = AppExecutor.getInstance();
                     appExecutor.diskIO().execute(new Runnable() {
                         @Override
@@ -112,7 +123,7 @@ public class DashboardViewModel extends AndroidViewModel {
         });
 
 
-        return listOfCountries;
+
     }
 
     public LiveData<String> getText() {

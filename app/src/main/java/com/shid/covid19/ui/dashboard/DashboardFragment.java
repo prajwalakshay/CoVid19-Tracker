@@ -30,6 +30,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -104,6 +105,8 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
 
                 if (countries != null) {
                     countriesList = countries;
+                    //adapter.updateEmployeeListItems(countriesList);
+
                     adapter.setClips(countriesList);
                 }
             }
