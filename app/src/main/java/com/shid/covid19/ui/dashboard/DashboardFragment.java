@@ -52,7 +52,7 @@ import static com.shid.covid19.Utils.Constant.ERROR;
 import static com.shid.covid19.Utils.Constant.FAILURE;
 import static com.shid.covid19.Utils.Constant.SUCCESS;
 
-public class DashboardFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public class DashboardFragment extends Fragment  {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     public static List<Countries> countriesList = new ArrayList<>();
@@ -60,7 +60,6 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
     private CountryAdapter adapter;
     private String TAG = getClass().getSimpleName();
     private TextView title;
-    private SwipeRefreshLayout swipeRefreshLayout;
     private RelativeLayout errorLayout;
     private ImageView errorImage;
     private TextView errorTitle, errorMessage;
@@ -82,20 +81,8 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
 
         setUI(root);
 
-
-        // Wave wave = new Wave();
-        //progressBar.setIndeterminateDrawable(wave);
-
         database = AppDatabase.getInstance(getContext());
-        /*
-        dashboardViewModel.getCountries().observe(getViewLifecycleOwner(), new Observer<List<Countries>>() {
-            @Override
-            public void onChanged(List<Countries> countries) {
-                countriesList = countries;
-            }
-        });
 
-         */
         dashboardViewModel.getCountries().observe(getViewLifecycleOwner(), new Observer<List<Countries>>() {
             @Override
             public void onChanged(List<Countries> countries) {
@@ -241,9 +228,7 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
 
 
         searchView = (SearchView) toolbar.getMenu().findItem(R.id.action_search).getActionView();
-        swipeRefreshLayout = root.findViewById(R.id.swipe_refresh_layout);
-        swipeRefreshLayout.setOnRefreshListener(this);
-        swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent);
+
         adapter = new CountryAdapter(getContext());
 
 
@@ -262,11 +247,7 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         btnRetry = root.findViewById(R.id.btnRetry);
     }
 
-    @Override
-    public void onRefresh() {
-        restartApp();
 
-    }
 
     private void restartApp() {
         getActivity().recreate();
@@ -310,11 +291,11 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
         switch (value) {
             case SUCCESS:
 
-                swipeRefreshLayout.setRefreshing(false);
+
                 DashboardViewModel.status = "";
                 break;
             case FAILURE:
-                swipeRefreshLayout.setRefreshing(false);
+
                 DashboardViewModel.status = "";
                 showErrorMessage(
                         R.drawable.oops,
@@ -327,7 +308,7 @@ public class DashboardFragment extends Fragment implements SwipeRefreshLayout.On
                 Log.d(TAG, "status is: " + DashboardViewModel.status);
 
                 DashboardViewModel.status = "";
-                swipeRefreshLayout.setRefreshing(false);
+
                 showErrorMessage(
                         R.drawable.no_result,
                         "Pas de Résultat",
