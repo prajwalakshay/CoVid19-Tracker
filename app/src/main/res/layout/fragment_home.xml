@@ -81,7 +81,7 @@
                         android:id="@+id/imageView"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/b"
+                        android:src="@drawable/number_case"
                          />
 
                 </RelativeLayout>
@@ -136,7 +136,7 @@
                         android:id="@+id/imageDeath"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/a"
+                        android:src="@drawable/death"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                          />
@@ -189,7 +189,7 @@
                         android:id="@+id/imageRecovered"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/c"
+                        android:src="@drawable/recovered"
                          />
                 </RelativeLayout>
 

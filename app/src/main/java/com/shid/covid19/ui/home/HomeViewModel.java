@@ -1,6 +1,7 @@
 package com.shid.covid19.ui.home;
 
 import android.app.Application;
+import android.os.Handler;
 
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
@@ -32,13 +33,15 @@ public class HomeViewModel extends AndroidViewModel {
         super(application);
         totalCasesLiveData = new MutableLiveData<>();
         database = AppDatabase.getInstance(this.getApplication());
-        roomTotalCasesLiveData = database.coronaDAO().loadTotalCases();
         getTotalCases();
+        roomTotalCasesLiveData = database.coronaDAO().loadTotalCases();
+
 
 
     }
 
     public LiveData<TotalCases>getLocal(){
+
         AppExecutor appExecutor = AppExecutor.getInstance();
         appExecutor.diskIO().execute(new Runnable() {
             @Override
