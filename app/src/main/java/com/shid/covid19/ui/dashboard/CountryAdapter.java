@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
 import com.shid.covid19.Model.Countries;
 import com.shid.covid19.R;
 import com.shid.covid19.Utils.CountriesDiffCallback;
@@ -57,6 +59,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         holder.number_cases.setText(context.getString(R.string.adapter_case) + country.getCases());
         holder.today_cases.setText(context.getString(R.string.adapter_today_case) + country.getTodayCases());
         holder.deaths.setText(context.getString(R.string.adapter_deaths) + country.getDeaths());
+        Glide.with(context).load(country.getCountryInfo().getFlag()).into(holder.flag);
 
 
     }
@@ -117,6 +120,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder  {
 
         TextView country, number_cases, today_cases, deaths, today_deaths, recovered;
+        ImageView flag;
         OnItemClickListener onItemClickListener;
 
         public MyViewHolder(View itemView) {
@@ -130,6 +134,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
             deaths = itemView.findViewById(R.id.number_of_deaths);
             today_deaths = itemView.findViewById(R.id.todays_deaths);
             recovered = itemView.findViewById(R.id.number_of_recovered);
+            flag = itemView.findViewById(R.id.flag);
 
 
             this.onItemClickListener = onItemClickListener;

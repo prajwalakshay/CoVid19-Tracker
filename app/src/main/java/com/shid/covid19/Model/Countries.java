@@ -1,5 +1,6 @@
 package com.shid.covid19.Model;
 
+import androidx.room.Embedded;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
@@ -36,17 +37,24 @@ public class Countries {
     @Expose
     private int recovered;
 
+    @SerializedName("countryInfo")
+    @Expose
+    @Embedded
+    private CountryInfo countryInfo;
+
     @Ignore
-    public Countries(String country, int cases, int todayCases, int deaths, int todayDeaths, int recovered) {
+    public Countries(String country, int cases, int todayCases, int deaths, int todayDeaths, int recovered,CountryInfo countryInfo) {
         this.country = country;
         this.cases = cases;
         this.todayCases = todayCases;
         this.deaths = deaths;
         this.todayDeaths = todayDeaths;
         this.recovered = recovered;
+        this.countryInfo = countryInfo;
     }
 
-    public Countries(int countryId, String country, int cases, int todayCases, int deaths, int todayDeaths, int recovered) {
+    public Countries(int countryId, String country, int cases, int todayCases, int deaths, int todayDeaths, int recovered
+    ,CountryInfo countryInfo) {
         this.countryId = countryId;
         this.country = country;
         this.cases = cases;
@@ -54,6 +62,15 @@ public class Countries {
         this.deaths = deaths;
         this.todayDeaths = todayDeaths;
         this.recovered = recovered;
+        this.countryInfo = countryInfo;
+    }
+
+    public CountryInfo getCountryInfo() {
+        return countryInfo;
+    }
+
+    public void setCountryInfo(CountryInfo countryInfo) {
+        this.countryInfo = countryInfo;
     }
 
     public int getCountryId() {
