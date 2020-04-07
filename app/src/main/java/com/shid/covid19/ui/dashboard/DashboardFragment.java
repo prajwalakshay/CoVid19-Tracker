@@ -28,6 +28,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DiffUtil;
@@ -75,8 +76,8 @@ public class DashboardFragment extends Fragment  {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
+        dashboardViewModel = new ViewModelProvider(this).get(DashboardViewModel.class);
+              //  ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         setUI(root);
@@ -135,7 +136,7 @@ public class DashboardFragment extends Fragment  {
             }
         });
 
-        searchView.setQueryHint("Recherche...");
+        searchView.setQueryHint(getString(R.string.recherche));
         //searchView.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -169,7 +170,7 @@ public class DashboardFragment extends Fragment  {
                     @Override
                     public void run() {
                         if (searchList == null) {
-                            Toast.makeText(getContext(), "mauvaise entrée", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(), R.string.toast_search_error, Toast.LENGTH_LONG).show();
                         } else {
 
                             adapter.setClips(searchList);
@@ -224,7 +225,7 @@ public class DashboardFragment extends Fragment  {
         //Setting up the Toolbar
 
         toolbar.inflateMenu(R.menu.menu_countries);
-        toolbar.setTitle("Situation par pays");
+        toolbar.setTitle(R.string.situation);
 
 
         searchView = (SearchView) toolbar.getMenu().findItem(R.id.action_search).getActionView();
@@ -300,7 +301,7 @@ public class DashboardFragment extends Fragment  {
                 showErrorMessage(
                         R.drawable.oops,
                         "Oops..",
-                        "Pas de réseau, Réessayer\n" +
+                        getString(R.string.error_network) +
                                 DashboardViewModel.errorCode);
                 break;
             case ERROR:
@@ -311,8 +312,8 @@ public class DashboardFragment extends Fragment  {
 
                 showErrorMessage(
                         R.drawable.no_result,
-                        "Pas de Résultat",
-                        "Réessayer!\n" +
+                        getString(R.string.no_result),
+                        getString(R.string.retry) +
                                 DashboardViewModel.errorCode);
                 break;
             default:

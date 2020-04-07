@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:popupTheme="@style/Theme.Popup"
                 app:theme="@style/Theme.GuidelinesCompat.Toolbar"
-                app:title="Situation Globale"
+                app:title="@string/monde_titre"
                 app:titleTextColor="@android:color/black" />
 
             <androidx.cardview.widget.CardView
@@ -78,7 +78,7 @@
                         android:layout_below="@+id/number_of_cases"
                         android:layout_marginStart="20dp"
                         android:layout_toRightOf="@+id/imageView"
-                        android:text="Nombre de Cas"
+                        android:text="@string/nombre_de_cas"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:textSize="20sp" />
@@ -129,7 +129,7 @@
                         android:id="@+id/textView_deaths"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nombre de Morts"
+                        android:text="@string/nombre_de_morts"
                         android:layout_marginStart="20dp"
                         android:layout_below="@+id/number_of_deaths"
                         android:layout_toRightOf="@+id/imageDeath"
@@ -184,7 +184,7 @@
                         android:id="@+id/textView_recovered"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nombre de guérisons"
+                        android:text="@string/nombre_de_gu_risons"
                         android:layout_below="@+id/number_of_recovered"
                         android:textAlignment="center"
                         android:layout_toRightOf="@+id/imageRecovered"

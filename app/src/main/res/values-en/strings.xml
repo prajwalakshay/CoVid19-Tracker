@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoVid19</string>
+    <string name="question1">"What is a coronavirus? "</string>
+    <string name="question2">"What are the symptoms of COVID-19? "</string>
+    <string name="question3">"How does COVID-19 spread? "</string>
+    <string name="question4">"What can I do to protect myself and prevent the spread of disease? "</string>
+    <string name="question5">"How likely am I to catch COVID-19? "</string>
+    <string name="question6">Should I worry about COVID-19?</string>
+    <string name="question7">"Who is at risk of developing severe illness? "</string>
+    <string name="question8">"Are antibiotics effective in preventing or treating the COVID-19? "</string>
+    <string name="question9">"Is COVID-19 the same as SARS? "</string>
+    <string name="question10">"How long is the incubation period for COVID-19? "</string>
+    <string name="question11">"Can humans become infected with the COVID-19 from an animal source? "</string>
+    <string name="question12">"Can I catch COVID-19 from my pet? "</string>
+    <string name="question13">"How long does the virus survive on surfaces? "</string>
+    <string name="question14">"Is there anything I should not do? "</string>
+    <string name="answer1">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+    <string name="answer2">The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don\'t feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.</string>
+    <string name="answer3">People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth. People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick.</string>
+    <string name="answer4">Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news.</string>
+    <string name="answer5">The risk depends on where you  are - and more specifically, whether there is a COVID-19 outbreak unfolding there.</string>
+    <string name="answer7">"While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes)  appear to develop serious illness more often than others. "</string>
+    <string name="answer9">No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different.</string>
+    <string name="answer6">Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness: about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones.</string>
+    <string name="answer8">"No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection. "</string>
+    <string name="answer11">"Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by dromedary camels. Possible animal sources of COVID-19 have not yet been confirmed.  "</string>
+    <string name="answer10">The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available.</string>
+    <string name="answer12">"While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks. To protect yourself, clean your hands frequently and thoroughly. "</string>
+    <string name="answer14">The following measures ARE NOT effective against COVID-2019 and can be harmful:      Smoking     Wearing multiple masks     Taking antibiotics (See question 10 \"Are there any medicines of therapies that can prevent or cure COVID-19?\")  In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.</string>
+    <string name="answer13">It is not certain how long the virus that causes COVID-19 survives on surfaces,
+        but it seems to behave like other coronaviruses. Studies suggest that coronaviruses
+        (including preliminary information on the COVID-19 virus) may persist on surfaces for a few
+        hours or up to several days. This may vary under different conditions (e.g. type of surface,
+        temperature or humidity of the environment).  If you think a surface may be infected, clean
+        it with simple disinfectant to kill the virus and protect yourself and others.
+        Clean your hands with an alcohol-based hand rub or wash them with soap and water.
+        Avoid touching your eyes, mouth, or nose.</string>
+
+    <string name="r_essayer">Retry</string>
+    <string name="information">Information</string>
+    <string name="nombre_de_cas">Number of Cases</string>
+    <string name="nombre_de_morts">Number of Deaths</string>
+    <string name="nombre_de_gu_risons">Number of Recoveries</string>
+    <string name="monde_titre">Global Situation</string>
+
+    <string name="adapter_recovery">Number of recovery: </string>
+    <string name="adapter_today_death">Number of Deaths today:  </string>
+    <string name="adapter_case">Number of Cases:  </string>
+    <string name="adapter_today_case">Number of Cases today:  </string>
+    <string name="adapter_deaths">Number of Deaths:  </string>
+    <string name="recherche">Search...</string>
+    <string name="toast_search_error">Wrong Entry</string>
+    <string name="situation">Situation by Country</string>
+    <string name="error_network">No Network, Retry\n</string>
+    <string name="no_result">No Results</string>
+    <string name="retry">Retry!\n</string>
+    <string name="informations">Informations</string>
+    <string name="monde">World</string>
+    <string name="pays">Country</string>
+</resources>

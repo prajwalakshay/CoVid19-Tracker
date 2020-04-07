@@ -8,7 +8,7 @@
     <string-array name="questions">
 
     </string-array>
-    <string name="question1">Qu’est-ce qu’un coronavirus ?</string>
+    <string name="question1">Qu\'est ce qu\'un Coronavirus?</string>
     <string name="question2">Quels sont les symptômes de la COVID-19 ?</string>
     <string name="question3">Comment la COVID-19 se propage-t-elle ?</string>
     <string name="question4">Comment puis-je me protéger et éviter que la maladie ne se propage ?</string>
@@ -94,4 +94,27 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     Fumer
     Porter plusieurs masques à la fois
     Prendre des antibiotiques</string>
+
+    <string name="r_essayer">Réessayer</string>
+    <string name="information">Information</string>
+    <string name="nombre_de_cas">Nombre de Cas</string>
+    <string name="nombre_de_morts">Nombre de Morts</string>
+    <string name="nombre_de_gu_risons">Nombre de guérisons</string>
+    <string name="monde_titre">Situation Globale</string>
+
+    <string name="adapter_recovery">Nombre de personne rétabli: </string>
+    <string name="adapter_today_death">Personne(s) décédés aujourd\'hui:  </string>
+    <string name="adapter_case">Nombre de cas avérés:  </string>
+    <string name="adapter_today_case">Cas avérés aujour\'hui:  </string>
+    <string name="adapter_deaths">Nombre de personnes Décédées:  </string>
+    <string name="recherche">Recherche...</string>
+    <string name="toast_search_error">Mauvaise Entrée</string>
+    <string name="situation">Situation par pays</string>
+    <string name="error_network">Pas de réseau, Réessayer\n</string>
+    <string name="no_result">Pas de Résultat</string>
+    <string name="retry">Réessayer!\n</string>
+    <string name="monde">Monde</string>
+    <string name="pays">Pays</string>
+    <string name="informations">Informations</string>
+
 </resources>

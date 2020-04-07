@@ -51,12 +51,12 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
 
         Countries country = countries.get(position);
 
-        holder.recovered.setText("Nombre de personne rétabli: " + country.getRecovered());
+        holder.recovered.setText(context.getString(R.string.adapter_recovery) + country.getRecovered());
         holder.country.setText(country.getCountry());
-        holder.today_deaths.setText("Personne(s) décédés aujourd'hui: " + country.getTodayDeaths());
-        holder.number_cases.setText("Nombre de cas avérés: " + country.getCases());
-        holder.today_cases.setText("Cas avérés aujour'hui: " + country.getTodayCases());
-        holder.deaths.setText("Nombre de personne Décédé: " + country.getDeaths());
+        holder.today_deaths.setText(context.getString(R.string.adapter_today_death) + country.getTodayDeaths());
+        holder.number_cases.setText(context.getString(R.string.adapter_case) + country.getCases());
+        holder.today_cases.setText(context.getString(R.string.adapter_today_case) + country.getTodayCases());
+        holder.deaths.setText(context.getString(R.string.adapter_deaths) + country.getDeaths());
 
 
     }
