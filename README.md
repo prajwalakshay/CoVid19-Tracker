@@ -3,17 +3,19 @@
 
 Covid19-Tracker  is a sample Android application 📱 built to demonstrate use of Modern Android development tools.
 
-| Main Screen (Global numbers      |  Country tab |  Information tab |
+| Main Screen (Global numbers)      |  Country tab |  Information tab |
 | ----------- | ----------- |----------- |
 |![](images/home.jpeg)|![](images/country.jpeg)|![](images/info2.jpeg)|
 
 ## About
+
 - Loads Total Covid-19 cases in the world from API
 - User can search for a particular country 
 - Numbers are updated automatically
 - Information provided by WHO
 
 ## Built With 🛠
+
 - Java
 - Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps.
     - LiveData - Data objects that notify views when the underlying database changes.
@@ -22,6 +24,7 @@ Covid19-Tracker  is a sample Android application 📱 built to demonstrate use o
 - Room - A persistence library provides an abstraction layer over SQLite
 
 ## Credits
+
 Thanks to [NovelCovid](https://github.com/NovelCOVID/API) for the API
 
 ## Licence
