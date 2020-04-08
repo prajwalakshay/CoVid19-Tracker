@@ -12,7 +12,7 @@ Covid19-Tracker  is a sample Android application 📱 built to demonstrate use o
 - Loads Total Covid-19 cases in the world from API
 - User can search for a particular country 
 - Numbers are updated automatically
-- Information provided by WHO
+- Q&A provided by WHO
 
 ## Built With 🛠
 
