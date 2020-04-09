@@ -77,9 +77,9 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
             public void onChanged(TotalCases totalCases) {
                 setUiBasedOnStatus(HomeViewModel.status);
                 if (totalCases != null) {
-                    numberOfCases.setText("" + totalCases.getCases());
-                    numberOfDeaths.setText("" + totalCases.getDeaths());
-                    numberOfRecovered.setText("" + totalCases.getRecovered());
+                    numberOfCases.setText("" + String.format("%,d", totalCases.getCases()) );
+                    numberOfDeaths.setText("" + String.format("%,d", totalCases.getDeaths()) );
+                    numberOfRecovered.setText("" + String.format("%,d", totalCases.getRecovered()) );
                 }
             }
         });

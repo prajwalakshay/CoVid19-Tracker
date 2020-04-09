@@ -66,9 +66,9 @@
                         android:layout_toRightOf="@+id/imageView"
                         android:text="1XXXXXX"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFA500"
                         android:textSize="20sp"
-                        android:textStyle="bold"
+
                          />
 
                     <TextView
@@ -119,9 +119,8 @@
                         android:layout_marginLeft="75dp"
                         android:layout_marginTop="20dp"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#CC0000"
                         android:textSize="20sp"
-                        android:textStyle="bold"
                         android:layout_toRightOf="@+id/imageDeath"
                          />
 
@@ -174,10 +173,10 @@
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="20dp"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#008000"
                         android:layout_toRightOf="@+id/imageRecovered"
                         android:textSize="20sp"
-                        android:textStyle="bold"
+
                          />
 
                     <TextView
