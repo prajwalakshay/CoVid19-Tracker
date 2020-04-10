@@ -116,5 +116,8 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="monde">Monde</string>
     <string name="pays">Pays</string>
     <string name="informations">Informations</string>
+    <string name="bottom_menu_map">Carte</string>
+
+
 
 </resources>

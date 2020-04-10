@@ -41,13 +41,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:background="@color/colorWhite"
+                android:background="#FFA500"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#FFA500">
 
 
                     <TextView
@@ -60,7 +61,7 @@
                         android:fontFamily="@font/changa"
                         android:text="1XXXXXX"
                         android:textAlignment="center"
-                        android:textColor="#FFA500"
+                        android:textColor="#FFFFFF"
                         android:textSize="20sp"
                          />
 
@@ -73,12 +74,12 @@
                         android:layout_toRightOf="@+id/imageView"
                         android:text="@string/nombre_de_cas"
                         android:textAlignment="center"
-                        android:textColor="#000"
+                        android:textColor="#FFFFFF"
                         android:textSize="20sp" />
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="150dp"
+                        android:layout_width="155dp"
                         android:layout_height="100dp"
                         android:src="@drawable/number_case" />
 
@@ -93,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:background="@color/colorWhite"
+                android:background="#CC0000"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp"
                 tools:layout_editor_absoluteX="26dp"
@@ -101,7 +102,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#CC0000">
 
                     <TextView
                         android:id="@+id/number_of_deaths"
@@ -113,7 +115,7 @@
                         android:fontFamily="@font/changa"
                         android:text="1XXXXX"
                         android:textAlignment="center"
-                        android:textColor="#CC0000"
+                        android:textColor="#FFF"
                         android:textSize="20sp"
                          />
 
@@ -126,12 +128,12 @@
                         android:layout_toRightOf="@+id/imageDeath"
                         android:text="@string/nombre_de_morts"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFF"
                         android:textSize="20sp" />
 
                     <ImageView
                         android:id="@+id/imageDeath"
-                        android:layout_width="150dp"
+                        android:layout_width="155dp"
                         android:layout_height="100dp"
                         android:src="@drawable/death"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -147,13 +149,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:background="@color/colorWhite"
+                android:background="#008000"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#008000">
 
                     <TextView
                         android:id="@+id/number_of_recovered"
@@ -165,7 +168,7 @@
                         android:fontFamily="@font/changa"
                         android:text="10000"
                         android:textAlignment="center"
-                        android:textColor="#008000"
+                        android:textColor="#FFF"
                         android:textSize="20sp"
                          />
 
@@ -177,12 +180,12 @@
                         android:layout_toRightOf="@+id/imageRecovered"
                         android:text="@string/nombre_de_gu_risons"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFF"
                         android:textSize="20sp" />
 
                     <ImageView
                         android:id="@+id/imageRecovered"
-                        android:layout_width="150dp"
+                        android:layout_width="155dp"
                         android:layout_height="100dp"
                         android:src="@drawable/recovered" />
                 </RelativeLayout>

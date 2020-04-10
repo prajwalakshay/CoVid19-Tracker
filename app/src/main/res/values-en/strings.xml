@@ -58,4 +58,5 @@
     <string name="informations">Informations</string>
     <string name="monde">World</string>
     <string name="pays">Country</string>
+    <string name="bottom_menu_map">Map</string>
 </resources>
