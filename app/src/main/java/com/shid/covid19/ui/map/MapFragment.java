@@ -3,6 +3,7 @@ package com.shid.covid19.ui.map;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.shid.covid19.R;
 
@@ -30,6 +33,11 @@ public class MapFragment extends Fragment implements HandleBackPress {
     private String mParam2;
 
     private WebView covidWebView;
+    private ProgressBar progressBar;
+    private TextView loadingTxt;
+
+
+    private Bundle webViewBundle;
 
     public MapFragment() {
         // Required empty public constructor
@@ -60,24 +68,63 @@ public class MapFragment extends Fragment implements HandleBackPress {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        setRetainInstance(true);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_map, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_map, container, false);
 
         covidWebView = rootView.findViewById(R.id.webview);
+        progressBar = rootView.findViewById(R.id.progressBar);
+        loadingTxt = rootView.findViewById(R.id.textView_load);
 
 
         WebSettings settings = covidWebView.getSettings();
         settings.setJavaScriptEnabled(true);
-        covidWebView.setWebViewClient(new WebViewClient());
-        covidWebView.loadUrl("https://www.bing.com/covid");
+        settings.setLoadWithOverviewMode(true);
+        settings.setUseWideViewPort(true);
+        settings.setBuiltInZoomControls(true);
+        settings.setJavaScriptCanOpenWindowsAutomatically(true);
+        settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
+
+// Enable AppCache
+// Fix for CB-2282
+
+        settings.setAppCacheEnabled(true);
+        covidWebView.setWebViewClient(new WebViewClient() {
+
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
+                view.loadUrl(url);
+                return true;
+            }
+
+            public void onPageFinished(WebView view, String url) {
+                progressBar.setVisibility(View.GONE);
+                loadingTxt.setVisibility(View.GONE);
+                covidWebView.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        if (webViewBundle != null) {
+            covidWebView.restoreState(webViewBundle);
+        } else {
+            covidWebView.loadUrl("https://www.bing.com/covid");
+        }
 
 
         return rootView;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        webViewBundle = new Bundle();
+        covidWebView.saveState(webViewBundle);
     }
 
     @Override
@@ -89,4 +136,6 @@ public class MapFragment extends Fragment implements HandleBackPress {
             return false;
         }
     }
+
+
 }

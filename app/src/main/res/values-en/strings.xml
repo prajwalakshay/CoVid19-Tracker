@@ -59,4 +59,5 @@
     <string name="monde">World</string>
     <string name="pays">Country</string>
     <string name="bottom_menu_map">Map</string>
+    <string name="fragment_map_textview">The Map is loading please wait...</string>
 </resources>

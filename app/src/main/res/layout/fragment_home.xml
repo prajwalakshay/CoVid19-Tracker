@@ -34,7 +34,14 @@
                 app:popupTheme="@style/Theme.Popup"
                 app:theme="@style/Theme.GuidelinesCompat.Toolbar"
                 app:title="@string/monde_titre"
-                app:titleTextColor="@android:color/black" />
+                app:titleTextColor="@android:color/black" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher_foreground"/>
+            </androidx.appcompat.widget.Toolbar>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

@@ -40,7 +40,14 @@
                 app:popupTheme="@style/Theme.Popup"
                 app:theme="@style/Theme.GuidelinesCompat.Toolbar"
                 app:title="@string/monde_titre"
-                app:titleTextColor="@android:color/black" />
+                app:titleTextColor="@android:color/black" >
+
+                <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_foreground"/>
+            </androidx.appcompat.widget.Toolbar>
 
             <androidx.cardview.widget.CardView
                 app:cardElevation="8dp"
@@ -54,7 +61,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#FFA500">
 
 
                     <TextView
@@ -66,7 +74,7 @@
                         android:layout_toRightOf="@+id/imageView"
                         android:text="1XXXXXX"
                         android:textAlignment="center"
-                        android:textColor="#FFA500"
+                        android:textColor="#FFFFFF"
                         android:textSize="20sp"
 
                          />
@@ -80,7 +88,7 @@
                         android:layout_toRightOf="@+id/imageView"
                         android:text="@string/nombre_de_cas"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFFFFF"
                         android:textSize="20sp" />
 
                     <ImageView
@@ -109,7 +117,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#CC0000">
 
                     <TextView
                         android:id="@+id/number_of_deaths"
@@ -119,7 +128,7 @@
                         android:layout_marginLeft="75dp"
                         android:layout_marginTop="20dp"
                         android:textAlignment="center"
-                        android:textColor="#CC0000"
+                        android:textColor="#FFF"
                         android:textSize="20sp"
                         android:layout_toRightOf="@+id/imageDeath"
                          />
@@ -133,7 +142,7 @@
                         android:layout_below="@+id/number_of_deaths"
                         android:layout_toRightOf="@+id/imageDeath"
                         android:textAlignment="center"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFF"
                         android:textSize="20sp"
                         />
 
@@ -163,7 +172,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#008000">
 
                     <TextView
                         android:id="@+id/number_of_recovered"
@@ -173,7 +183,7 @@
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="20dp"
                         android:textAlignment="center"
-                        android:textColor="#008000"
+                        android:textColor="#FFF"
                         android:layout_toRightOf="@+id/imageRecovered"
                         android:textSize="20sp"
 
@@ -187,7 +197,7 @@
                         android:layout_below="@+id/number_of_recovered"
                         android:textAlignment="center"
                         android:layout_toRightOf="@+id/imageRecovered"
-                        android:textColor="@color/colorBlack"
+                        android:textColor="#FFF"
                         android:textSize="20sp"
                          />
 
