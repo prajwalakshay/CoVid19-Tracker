@@ -119,6 +119,7 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="bottom_menu_map">Carte</string>
     <string name="fragment_map_textview">Chargement de la carte veuillez patienter...</string>
 
-
-
+    <string name="cases">Cas</string>
+    <string name="recovered">Guérison</string>
+    <string name="deceased">Décès</string>
 </resources>

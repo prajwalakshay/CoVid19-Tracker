@@ -60,4 +60,7 @@
     <string name="pays">Country</string>
     <string name="bottom_menu_map">Map</string>
     <string name="fragment_map_textview">The Map is loading please wait...</string>
+    <string name="cases">Cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
 </resources>

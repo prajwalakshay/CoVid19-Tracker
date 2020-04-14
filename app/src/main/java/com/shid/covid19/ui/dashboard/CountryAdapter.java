@@ -32,8 +32,8 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
     private OnItemClickListener onItemClickListener;
 
 
-    public CountryAdapter( Context context) {
-       // this.countries = countries;
+    public CountryAdapter(Context context) {
+        // this.countries = countries;
         this.context = context;
 
         this.countries = new ArrayList<>();
@@ -53,12 +53,23 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
 
         Countries country = countries.get(position);
 
-        holder.recovered.setText(context.getString(R.string.adapter_recovery) + " " + String.format("%,d", country.getRecovered()) );
+
+        holder.recovered.setText(String.format("%,d", country.getRecovered()));
         holder.country.setText(country.getCountry());
-        holder.today_deaths.setText(context.getString(R.string.adapter_today_death) + " " + String.format("%,d", country.getTodayDeaths()) );
-        holder.number_cases.setText(context.getString(R.string.adapter_case) + " " + String.format("%,d", country.getCases()) );
-        holder.today_cases.setText(context.getString(R.string.adapter_today_case) + " " + String.format("%,d", country.getTodayCases()) );
-        holder.deaths.setText(context.getString(R.string.adapter_deaths) + " " + String.format("%,d", country.getDeaths()) );
+        if (country.getTodayDeaths() == 0) {
+            holder.today_deaths.setText(String.format("%,d", country.getTodayDeaths()));
+        } else {
+            holder.today_deaths.setText("(+" + String.format("%,d", country.getTodayDeaths()) + ")");
+        }
+
+        holder.number_cases.setText(String.format("%,d", country.getCases()));
+        if (country.getTodayCases() == 0) {
+            holder.today_cases.setText(String.format("%,d", country.getTodayCases()));
+        } else {
+            holder.today_cases.setText("(+" + String.format("%,d", country.getTodayCases()) + ")");
+        }
+
+        holder.deaths.setText(String.format("%,d", country.getDeaths()));
         Glide.with(context).load(country.getCountryInfo().getFlag()).into(holder.flag);
 
 
@@ -105,7 +116,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         DashboardFragment.countriesList.clear();
         if (charText.length() == 0) {
             DashboardFragment.countriesList.addAll(countries);
-           // countries.addAll(DashboardFragment.countriesList);
+            // countries.addAll(DashboardFragment.countriesList);
         } else {
             for (Countries wp : countries) {
                 if (wp.getCountry().toLowerCase().contains(charText)) {
@@ -117,7 +128,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
         notifyDataSetChanged();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder  {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView country, number_cases, today_cases, deaths, today_deaths, recovered;
         ImageView flag;
@@ -140,8 +151,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.MyViewHo
             this.onItemClickListener = onItemClickListener;
 
         }
-
-
 
 
     }
