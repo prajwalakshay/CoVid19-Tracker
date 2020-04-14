@@ -25,6 +25,7 @@ public class DashboardViewModel extends AndroidViewModel {
 
     private MutableLiveData<String> mText;
     private LiveData<List<Countries>> countriesListLiveData;
+    private List<Countries> ecowasCountriesList;
     //private MutableLiveData<List<Countries>> listOfCountries;
     //private List<Countries> list;
     private LiveData<Countries> countryLiveData;
@@ -45,11 +46,15 @@ public class DashboardViewModel extends AndroidViewModel {
                 //listOfCountries = new MutableLiveData<>();
                 getListOfCountries();
                 countriesListLiveData = database.coronaDAO().loadCountries();
-
+                ecowasCountriesList = database.coronaDAO().loadEcowasCountries();
             }
         });
 
 
+    }
+
+    public List<Countries> getEcowasCountriesList(){
+        return ecowasCountriesList;
     }
 
     public LiveData<List<Countries>> getCountries() {
@@ -57,7 +62,7 @@ public class DashboardViewModel extends AndroidViewModel {
         appExecutor.diskIO().execute(new Runnable() {
             @Override
             public void run() {
-                if (database.coronaDAO().checkIfTableCountriesEmpty() <= 0){
+                if (database.coronaDAO().checkIfTableCountriesEmpty() <= 0) {
                     status = Constant.ERROR;
                 }
             }
@@ -76,7 +81,7 @@ public class DashboardViewModel extends AndroidViewModel {
                 if (response.isSuccessful() && response.body() != null) {
                     status = Constant.SUCCESS;
                     //list = response.body();
-                   // listOfCountries.postValue(response.body());
+                    // listOfCountries.postValue(response.body());
                     AppExecutor appExecutor = AppExecutor.getInstance();
                     appExecutor.diskIO().execute(new Runnable() {
                         @Override
@@ -121,7 +126,6 @@ public class DashboardViewModel extends AndroidViewModel {
 
             }
         });
-
 
 
     }

@@ -38,6 +38,12 @@ public interface CoronaDAO {
     @Query("SELECT * FROM countries WHERE country LIKE '%' || :country || '%' ")
     List<Countries> loadSpecificCountries(String country);
 
+    @Query("SELECT * FROM countries WHERE (country = 'Ghana') OR (country = 'Niger') OR (country = 'Nigeria')" +
+            " OR (country = 'Senegal') OR (country = 'Mali') OR (country ='Togo') OR (country = 'Benin')" +
+            " OR (country = 'Gambia') OR (country = 'Chad') OR (country = 'Liberia') OR (country = 'Mauritania')" +
+            " OR (country = 'Côte d''Ivoire') OR (country = 'Burkina Faso') ")
+    List<Countries> loadEcowasCountries();
+
     @Query("DELETE FROM countries")
     public void deleteTableCountries();
 

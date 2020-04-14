@@ -37,6 +37,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.github.ybq.android.spinkit.style.Wave;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.shid.covid19.Database.AppDatabase;
 import com.shid.covid19.Model.Countries;
 import com.shid.covid19.R;
@@ -53,7 +54,7 @@ import static com.shid.covid19.Utils.Constant.ERROR;
 import static com.shid.covid19.Utils.Constant.FAILURE;
 import static com.shid.covid19.Utils.Constant.SUCCESS;
 
-public class DashboardFragment extends Fragment  {
+public class DashboardFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     public static List<Countries> countriesList = new ArrayList<>();
@@ -70,6 +71,8 @@ public class DashboardFragment extends Fragment  {
     Countries pays;
     String test;
     AppDatabase database;
+    private FloatingActionButton btn_ecowas;
+    private boolean check = false;
 
 
     private DashboardViewModel dashboardViewModel;
@@ -77,7 +80,7 @@ public class DashboardFragment extends Fragment  {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel = new ViewModelProvider(this).get(DashboardViewModel.class);
-              //  ViewModelProviders.of(this).get(DashboardViewModel.class);
+        //  ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         setUI(root);
@@ -233,7 +236,6 @@ public class DashboardFragment extends Fragment  {
         adapter = new CountryAdapter(getContext());
 
 
-        title = root.findViewById(R.id.title_countries);
         recyclerView = root.findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
@@ -246,8 +248,25 @@ public class DashboardFragment extends Fragment  {
         errorTitle = root.findViewById(R.id.errorTitle);
         errorMessage = root.findViewById(R.id.errorMessage);
         btnRetry = root.findViewById(R.id.btnRetry);
-    }
+        btn_ecowas = root.findViewById(R.id.btn_ecowas);
 
+        btn_ecowas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                check = !check;
+                if (check) {
+                    List<Countries> ecowasList = dashboardViewModel.getEcowasCountriesList();
+                    adapter.setClips(ecowasList);
+                    btn_ecowas.setImageResource(R.drawable.ic_world_black_24dp);
+
+                } else {
+                    adapter.setClips(countriesList);
+                    btn_ecowas.setImageResource(R.drawable.africa);
+                }
+
+            }
+        });
+    }
 
 
     private void restartApp() {
