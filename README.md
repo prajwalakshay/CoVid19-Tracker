@@ -5,7 +5,7 @@ Covid19-Tracker  is a sample Android application 📱 built to demonstrate use o
 
 | Main Screen (Global numbers)      |  Country tab |  Information tab |Map  |
 | ----------- | ----------- |----------- |----------- |
-|<img src="images/1.jpeg" width="150" height="250">|<img src="images/2.jpeg" width="150" height="250">|<img src="images/info2.jpeg" width="150" height="250">|<img src="images/3.jpeg" width="150" height="250">|
+|<img src="images/1.jpeg" width="150" height="250">|<img src="images/4.jpeg" width="150" height="250">|<img src="images/info2.jpeg" width="150" height="250">|<img src="images/3.jpeg" width="150" height="250">|
 
 ## About
 
