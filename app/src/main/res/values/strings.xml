@@ -97,9 +97,8 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
 
     <string name="r_essayer">Réessayer</string>
     <string name="information">Information</string>
-    <string name="nombre_de_cas">Nombre de Cas</string>
-    <string name="nombre_de_morts">Nombre de Morts</string>
-    <string name="nombre_de_gu_risons">Nombre de guérisons</string>
+    <string name="nombre_de_cas">Cas</string>
+    <string name="nombre_de_gu_risons">Guérisons</string>
     <string name="monde_titre">Situation Globale</string>
 
     <string name="adapter_recovery">Nombre de personne rétabli: </string>
@@ -122,4 +121,11 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="cases">Cas</string>
     <string name="recovered">Guérison</string>
     <string name="deceased">Décès</string>
+    <string name="nombre_de_morts">Décès</string>
+
+    <string name="fever">Fièvre</string>
+    <string name="cough">Toux</string>
+    <string name="difficulty_breathing">Difficultés Respiratoire</string>
+    <string name="muscular">Douleurs Musculaires</string>
+    <string name="symptoms">Symptômes</string>
 </resources>

@@ -42,7 +42,7 @@
                     app:borderWidth="0dp"
                     app:elevation="6dp"
                     app:fabSize="normal"
-                    android:src="@drawable/africa"
+                    android:src="@drawable/ic_africa"
                     />
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"

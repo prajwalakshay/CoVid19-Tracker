@@ -261,7 +261,7 @@ public class DashboardFragment extends Fragment {
 
                 } else {
                     adapter.setClips(countriesList);
-                    btn_ecowas.setImageResource(R.drawable.africa);
+                    btn_ecowas.setImageResource(R.drawable.ic_africa);
                 }
 
             }

@@ -39,9 +39,9 @@
 
     <string name="r_essayer">Retry</string>
     <string name="information">Information</string>
-    <string name="nombre_de_cas">Number of Cases</string>
-    <string name="nombre_de_morts">Number of Deaths</string>
-    <string name="nombre_de_gu_risons">Number of Recoveries</string>
+    <string name="nombre_de_cas">Cases</string>
+    <string name="nombre_de_morts">Deaths</string>
+    <string name="nombre_de_gu_risons">" Recoveries"</string>
     <string name="monde_titre">Global Situation</string>
 
     <string name="adapter_recovery">Number of recovery: </string>
@@ -63,4 +63,9 @@
     <string name="cases">Cases</string>
     <string name="recovered">Recovered</string>
     <string name="deceased">Deceased</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="difficulty_breathing">Shortness of breath</string>
+    <string name="muscular">Muscular Pain</string>
+    <string name="symptoms">Symptoms</string>
 </resources>
