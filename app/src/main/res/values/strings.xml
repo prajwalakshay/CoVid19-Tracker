@@ -128,4 +128,69 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="difficulty_breathing">Difficultés Respiratoire</string>
     <string name="muscular">Douleurs Musculaires</string>
     <string name="symptoms">Symptômes</string>
+
+    <string name="scare_virus">Informez vous sur les symptômes du Covid 19</string>
+    <string name="consult_message">Prenez vos précautions et n\'ignorez pas les symptômes.</string>
+    <string name="consult_now">See below</string>
+    <string name="precaution">Precaution</string>
+
+    <string name="cover">Couvrez votre bouche quand \n vous toussez</string>
+    <string name="distance">Gardez votre distance</string>
+    <string name="crowd">Évitez les foules</string>
+    <string name="deinfect">Déinfectez les objets</string>
+    <string name="mask">Portez un masque</string>
+    <string name="shake">Évitez les poignées de mains</string>
+
+    <string name="wash">Comment se laver les mains</string>
+    <string name="water">Eau et savon</string>
+    <string name="palm">Paûme contre paûme</string>
+    <string name="fingers">Entre les doigts</string>
+    <string name="thumb">N\'oubliez pas le pouce</string>
+    <string name="back_of_hands">Dos de la main</string>
+    <string name="focus_on_wrist">Lavez le poignet</string>
+    <string name="wash_hands">Lavez vous les mains</string>
+
+    <string name="risk">Qui est le plus a risque?</string>
+    <string name="_0_9">0-9</string>
+    <string name="age2">10-19</string>
+    <string name="age3">20-29</string>
+    <string name="age4">30-39</string>
+    <string name="age5">40-49</string>
+    <string name="age6">50-59</string>
+    <string name="_60_69">60-69</string>
+    <string name="age8">70-79</string>
+    <string name="age9">80+</string>
+    <string name="splash_title">Covid 19</string>
+    <string name="splash_message">Restez informé, \nla meilleure solution de prévention.</string>
+
+    <string name="title_virus">(COVID-19): Ce que les parents devraient savoir</string>
+    <string name="protect">Comment vous protéger.</string>
+    <string name="press">Appuyez ici pour en savoir plus</string>
+
+    <string name="symptoms_title_1">Qu’est-ce qu’un « nouveau » coronavirus ?</string>
+    <string name="symptoms_desc_1">Un nouveau coronavirus (CoV) est une nouvelle souche de coronavirus.
+
+D’abord appelée « nouveau coronavirus 2019 » ou « nCoV-2019 », la maladie provoquée par le nouveau coronavirus identifiée pour la première fois à Wuhan, en Chine, a été rebaptisée « maladie à coronavirus 2019 » (COVID-19) – « CO » pour corona, « VI » pour virus et « D » pour maladie en anglais.
+
+Le virus de la COVID-19 est un nouveau virus de la même famille que d’autres virus tels que le syndrome respiratoire aigu sévère (SRAS) et certains types de rhumes courants.</string>
+    <string name="symptoms_title_2">Quels sont les symptômes du coronavirus ?</string>
+    <string name="symptoms_desc_2">Les symptômes peuvent inclure de la fièvre, de la toux et un essoufflement. Dans les cas les plus graves, l’infection peut provoquer une pneumonie ou des difficultés respiratoires. Plus rarement, la maladie peut être mortelle.
+
+Ces symptômes sont comparables à ceux de la grippe (influenza) ou d’un rhume banal, des maladies beaucoup plus courantes que la COVID-19, d’où la nécessité de procéder à des examens afin de confirmer qu’une personne est bien atteinte de la COVID-19. Dans tous les cas, il est important de se rappeler que les principales mesures de prévention restent les mêmes : il convient de se laver fréquemment les mains et d’observer une hygiène respiratoire (se couvrir la bouche et le nez avec le pli du coude ou un mouchoir en cas de toux ou d’éternuement, puis jeter le mouchoir dans une poubelle fermée). Par ailleurs, n’oubliez pas qu’il est possible de se faire vacciner contre la grippe, donc assurez-vous que votre enfant et vous êtes à jour dans vos vaccins.</string>
+    <string name="menu_symptoms">Symptômes</string>
+
+
+    <string name="scare_emergency_message">Le virus se transmet par contact direct avec les gouttelettes respiratoires produites par une personne infectée (lorsqu’elle tousse ou éternue) et au contact de surfaces contaminées par le virus</string>
+    <string name="scare_emergency">Comment se propage la COVID-19 ?</string>
+    <string name="emergency_title_1">Que faire si un membre de ma famille présente des symptômes ?</string>
+    <string name="emergency_desc_1">Consultez rapidement un médecin si vous toussez, ou si vous avez de la fièvre ou des difficultés à respirer, ou si vous observez les mêmes symptômes chez votre enfant. Pensez à prévenir au préalable votre médecin par téléphone si vous vous êtes rendu(e) dans une région dans laquelle des cas de COVID-19 ont été signalés ou si vous avez eu des contacts rapprochés avec une personne qui a voyagé dans l’une de ces régions et qui présente des symptômes respiratoires.</string>
+    <string name="emergency_title_2">La COVID-19 touche-t-elle les enfants ?</string>
+    <string name="emergency_desc_2">Il s’agit d’un nouveau virus si bien que nous manquons encore de données sur ses effets sur les enfants et les femmes enceintes. Nous savons que des personnes de tous les âges peuvent être infectées par le virus, mais, pour l’heure, relativement peu de cas de COVID-19 ont été signalés chez les enfants. Le virus n’est mortel que dans de rares cas et les décès enregistrés jusqu’à présent ont principalement concerné des personnes plus âgées qui avaient déjà des problèmes de santé.</string>
+    <string name="emergency_title_4">Comment éviter les risques d’infection ?</string>
+    <string name="emergency_desc_4">Voici quatre précautions que votre famille et vous pouvez prendre pour éviter l’infection :</string>
+    <string name="emergency_prevent_1">1re étape : Mouillez-vous les mains à l’eau courante.</string>
+    <string name="emergency_prevent_2">2e étape : Appliquez suffisamment de savon pour recouvrir vos mains mouillées.</string>
+    <string name="emergency_prevent_3">3e étape : Frottez toute la surface de vos mains, sans oublier le dos des mains et les espaces entre les doigts et sous les ongles, pendant au moins 20 secondes.</string>
+    <string name="emergency_prevent_4">4e étape : Rincez-vous soigneusement les mains à l’eau courante.</string>
+    <string name="emergency_prevent_5">5e étape : Séchez-vous les mains avec un linge propre ou avec une serviette à usage unique.</string>
 </resources>
