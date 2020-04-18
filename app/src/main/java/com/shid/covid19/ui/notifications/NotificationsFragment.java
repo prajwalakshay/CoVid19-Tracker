@@ -3,6 +3,7 @@ package com.shid.covid19.ui.notifications;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.OnItemClickListener;
+import com.orhanobut.dialogplus.ViewHolder;
 import com.shid.covid19.R;
 import com.shid.covid19.ui.SymptomActivity;
 
@@ -30,7 +34,8 @@ public class NotificationsFragment extends Fragment {
 
     NotificationsViewModel notificationsViewModel;
     Button btn_symptoms, btn_info;
-
+    CardView cardView;
+    DialogPlus dialogPlus;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -50,17 +55,39 @@ public class NotificationsFragment extends Fragment {
         btn_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(),InfoActivity.class);
+                Intent intent = new Intent(getContext(), InfoActivity.class);
                 startActivity(intent);
             }
         });
 
+        cardView = root.findViewById(R.id.cardQ1);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
 
         return root;
     }
 
-    private void backPress(){
+    private void openDialog() {
+        ViewHolder viewHolder = new ViewHolder(R.layout.dialog_view);
 
+        dialogPlus = DialogPlus.newDialog(getContext())
+                .setContentHolder(new ViewHolder(R.layout.layout_dialog))
+                .setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
+                    }
+                })
+                .setExpanded(true)  // This will enable the expand feature, (similar to android L share dialog)
+                .setGravity(Gravity.CENTER)
+                .setCancelable(true)
+                .create();
+
+        dialogPlus.show();
     }
 
 

@@ -70,9 +70,9 @@
     <string name="symptoms">Symptoms</string>
     <string name="scare_virus">Learn about the symptoms of Covid 19</string>
     <string name="consult_message">Take your precautions and don\'t ignore the symptoms.</string>
-    <string name="consult_now">See below</string>
+    <string name="consult_now">Press here to learn more</string>
     <string name="precaution">Precaution</string>
-    <string name="cover">Cover mouth and nose \n when coughing</string>
+    <string name="cover">Cover mouth and nose when coughing</string>
     <string name="distance">Keep your distance</string>
     <string name="crowd">Avoid crowded places</string>
     <string name="deinfect">Desinfect objects</string>
@@ -87,15 +87,15 @@
     <string name="focus_on_wrist">Focus on wrist</string>
     <string name="wash_hands">Wash your hands</string>
     <string name="risk">Who is at most at risk?</string>
-    <string name="_0_9">0-9</string>
-    <string name="age2">10-19</string>
-    <string name="age3">20-29</string>
-    <string name="age4">30-39</string>
-    <string name="age5">40-49</string>
-    <string name="age6">50-59</string>
-    <string name="_60_69">60-69</string>
-    <string name="age8">70-79</string>
-    <string name="age9">80+</string>
+    <string name="_0_9">0-9 years</string>
+    <string name="age2">10-19 years</string>
+    <string name="age3">20-29 years</string>
+    <string name="age4">30-39 years</string>
+    <string name="age5">40-49 years</string>
+    <string name="age6">50-59 years</string>
+    <string name="_60_69">60-69 years</string>
+    <string name="age8">70-79 years</string>
+    <string name="age9">80+ years</string>
     <string name="splash_message">Stay informed,\nthe best way to prevent.</string>
     <string name="splash_title">Covid 19</string>
     <string name="title_virus">(COVID-19): What parents should know</string>
@@ -119,4 +119,16 @@
     <string name="emergency_prevent_3">Step 3: Scrub all surfaces of the hands – including back of hands, between fingers and under nails – for at least 20 seconds.</string>
     <string name="emergency_prevent_4">Step 4: Rinse thoroughly with running water</string>
     <string name="emergency_prevent_5">Step 5: Dry hands with a clean cloth or single-use towel</string>
+    <string name="brought_you_by_shidtech">ShidTech</string>
+
+    <string name="frequently">Frequently Asked Questions</string>
+    <string name="frequent">The eminent Professor Woo Joo Kim answered some question on Covid-19</string>
+
+    <string name="q1">How can we get infected?</string>
+    <string name="q2">How effective is wearing a mask in general?</string>
+    <string name="q3">Why is this virus so deadly to the elderly?</string>
+    <string name="q4">How effective is wearing a mask in general?</string>
+    <string name="q5">How effective are cotton masks?</string>
+    <string name="q6">Does taking a lot of vitamins help strengthen my immune system?</string>
+    <string name="q7">Can we get sick after recovering from the virus?</string>
 </resources>

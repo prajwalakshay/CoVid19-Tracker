@@ -131,10 +131,10 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
 
     <string name="scare_virus">Informez vous sur les symptômes du Covid 19</string>
     <string name="consult_message">Prenez vos précautions et n\'ignorez pas les symptômes.</string>
-    <string name="consult_now">See below</string>
-    <string name="precaution">Precaution</string>
+    <string name="consult_now">Appuyez ici pour plus d\'informations</string>
+    <string name="precaution">Précaution à prendre</string>
 
-    <string name="cover">Couvrez votre bouche quand \n vous toussez</string>
+    <string name="cover">Couvrez votre bouche quand vous toussez</string>
     <string name="distance">Gardez votre distance</string>
     <string name="crowd">Évitez les foules</string>
     <string name="deinfect">Déinfectez les objets</string>
@@ -148,18 +148,18 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="thumb">N\'oubliez pas le pouce</string>
     <string name="back_of_hands">Dos de la main</string>
     <string name="focus_on_wrist">Lavez le poignet</string>
-    <string name="wash_hands">Lavez vous les mains</string>
+    <string name="wash_hands">Lavez-vous les mains</string>
 
-    <string name="risk">Qui est le plus a risque?</string>
-    <string name="_0_9">0-9</string>
-    <string name="age2">10-19</string>
-    <string name="age3">20-29</string>
-    <string name="age4">30-39</string>
-    <string name="age5">40-49</string>
-    <string name="age6">50-59</string>
-    <string name="_60_69">60-69</string>
-    <string name="age8">70-79</string>
-    <string name="age9">80+</string>
+    <string name="risk">Qui sont les personnes le plus à risque?</string>
+    <string name="_0_9">0-9 ans</string>
+    <string name="age2">10-19 ans</string>
+    <string name="age3">20-29 ans</string>
+    <string name="age4">30-39 ans</string>
+    <string name="age5">40-49 ans</string>
+    <string name="age6">50-59 ans</string>
+    <string name="_60_69">60-69 ans</string>
+    <string name="age8">70-79 ans</string>
+    <string name="age9">80+ ans</string>
     <string name="splash_title">Covid 19</string>
     <string name="splash_message">Restez informé, \nla meilleure solution de prévention.</string>
 
@@ -193,4 +193,17 @@ Ces symptômes sont comparables à ceux de la grippe (influenza) ou d’un rhume
     <string name="emergency_prevent_3">3e étape : Frottez toute la surface de vos mains, sans oublier le dos des mains et les espaces entre les doigts et sous les ongles, pendant au moins 20 secondes.</string>
     <string name="emergency_prevent_4">4e étape : Rincez-vous soigneusement les mains à l’eau courante.</string>
     <string name="emergency_prevent_5">5e étape : Séchez-vous les mains avec un linge propre ou avec une serviette à usage unique.</string>
+
+    <string name="brought_you_by_shidtech">ShidTech</string>
+
+    <string name="frequently">Foires aux Questions</string>
+    <string name="frequent">L\'éminent Professeur Woo Joo Kim a répondu à certaines questions à propos du Covid-19.</string>
+
+    <string name="q1">How can we get infected?</string>
+    <string name="q2">How effective is wearing a mask in general?</string>
+    <string name="q3">Why is this virus so deadly to the elderly?</string>
+    <string name="q4">How effective is wearing a mask in general?</string>
+    <string name="q5">How effective are cotton masks?</string>
+    <string name="q6">Does taking a lot of vitamins help strengthen my immune system?</string>
+    <string name="q7">Can we get sick after recovering from the virus?</string>
 </resources>

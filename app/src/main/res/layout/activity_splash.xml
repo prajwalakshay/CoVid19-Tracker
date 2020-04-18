@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/quicksand_semibold"
-        android:text="Brought you by ShidTech"
+        android:text="@string/brought_you_by_shidtech"
         android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
