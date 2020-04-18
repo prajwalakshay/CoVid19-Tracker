@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -102,8 +103,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView">
@@ -129,6 +128,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbHorizontal="@color/colorGreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/symptomsView">
@@ -282,8 +284,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
@@ -307,8 +307,11 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none"
+        android:scrollbars="horizontal"
         android:id="@+id/scroll_precaution"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbHorizontal="@color/colorGreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/precautionView">
@@ -565,8 +568,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/scroll_wash">
@@ -590,8 +591,11 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none"
+            android:scrollbars="horizontal"
             android:id="@+id/scroll_age"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbHorizontal="@color/colorGreen"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ageView">
@@ -943,8 +947,11 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none"
+            android:scrollbars="horizontal"
             android:id="@+id/scroll_wash"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbHorizontal="@color/colorGreen"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/washView">
@@ -1162,92 +1169,6 @@
         </HorizontalScrollView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/materialCardView2"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:background="@color/colorWhite"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="3dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/scroll_age">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
-                    android:adjustViewBounds="true"
-                    app:layout_constraintBottom_toTopOf="@+id/consultButton2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/verticalGuideLine2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/stay" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/verticalGuideLine2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.65" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="12dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toTopOf="@id/consultButton2"
-                    app:layout_constraintEnd_toStartOf="@+id/verticalGuideLine2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/title_virus"
-                        android:textColor="@color/gray"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/quicksand_semibold" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/protect"
-                        android:textColor="@color/gray"
-                        android:textSize="13sp"
-                        app:fontFamily="@font/quicksand_light" />
-
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/consultButton2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/press"
-                    android:textAllCaps="false"
-                    app:backgroundTint="@color/colorGreen"
-                    app:cornerRadius="6dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
             android:id="@+id/materialCardView3"
             android:layout_width="match_parent"
             android:layout_height="240dp"
@@ -1257,7 +1178,7 @@
             app:cardUseCompatPadding="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+            app:layout_constraintTop_toBottomOf="@+id/scroll_age">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -1323,6 +1244,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbHorizontal="@color/colorGreen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -1333,13 +1257,118 @@
                 android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="1dp"
                     android:background="@color/colorAccent"
                     android:id="@+id/cardQ1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/que1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/helvetica"
+                            android:gravity="center"
+                            android:text="@string/question1"
+                            android:textColor="@color/colorBlack" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="1dp"
+                    android:id="@+id/cardQ2"
+                    android:background="@color/colorAccent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/que1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/helvetica"
+                            android:gravity="center"
+                            android:text="@string/question3"
+                            android:textColor="@color/colorBlack" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="1dp"
+                    android:id="@+id/cardQ3"
+                    android:background="@color/colorAccent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/que1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/helvetica"
+                            android:gravity="center"
+                            android:text="@string/question10"
+                            android:textColor="@color/colorBlack" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/cardQ4"
+                    android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:cardUseCompatPadding="true">
@@ -1368,12 +1397,12 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="1dp"
-                    android:id="@+id/cardQ2"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/cardQ5"
                     android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
@@ -1403,12 +1432,12 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="1dp"
-                    android:id="@+id/cardQ3"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/cardQ6"
                     android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
@@ -1438,12 +1467,12 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:id="@+id/cardQ4"
+                    android:id="@+id/cardQ7"
                     android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
@@ -1473,12 +1502,12 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:id="@+id/cardQ5"
+                    android:id="@+id/cardQ8"
                     android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
@@ -1508,12 +1537,12 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="140dp"
+                    android:layout_width="180dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:id="@+id/cardQ6"
+                    android:id="@+id/cardQ9"
                     android:background="@color/colorAccent"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
@@ -1537,6 +1566,41 @@
                             android:fontFamily="@font/helvetica"
                             android:gravity="center"
                             android:text="@string/q6"
+                            android:textColor="@color/colorBlack" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/cardQ10"
+                    android:background="@color/colorAccent"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/que1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/helvetica"
+                            android:gravity="center"
+                            android:text="@string/q7"
                             android:textColor="@color/colorBlack" />
 
                     </LinearLayout>

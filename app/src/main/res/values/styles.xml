@@ -21,6 +21,9 @@
         <item name="textColor">#ffffff</item>
         <item name="tintColor">#ffffff</item>
         <item name="buttonColor">#2196F3</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:scrollbarThumbVertical">@color/colorBlack</item>
+        <item name="android:scrollbarThumbHorizontal">@color/colorGreen</item>
         <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
         <item name="colorControlNormal">#ff0000</item>
         <item name="colorControlHighlight">#ff0000</item>

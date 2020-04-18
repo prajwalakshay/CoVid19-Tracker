@@ -86,7 +86,7 @@
     <string name="back_of_hands">Back of hands</string>
     <string name="focus_on_wrist">Focus on wrist</string>
     <string name="wash_hands">Wash your hands</string>
-    <string name="risk">Who is at most at risk?</string>
+    <string name="risk">Who is at most at risk?\n(Fatality rate by patient\'s age)</string>
     <string name="_0_9">0-9 years</string>
     <string name="age2">10-19 years</string>
     <string name="age3">20-29 years</string>
@@ -122,13 +122,21 @@
     <string name="brought_you_by_shidtech">ShidTech</string>
 
     <string name="frequently">Frequently Asked Questions</string>
-    <string name="frequent">The eminent Professor Woo Joo Kim answered some question on Covid-19</string>
+    <string name="frequent">The eminent Professor Woo Joo Kim, one of the leading experts on the matter answered some question on Covid-19.\n\nPress on the questions below to see the answers</string>
 
-    <string name="q1">How can we get infected?</string>
-    <string name="q2">How effective is wearing a mask in general?</string>
-    <string name="q3">Why is this virus so deadly to the elderly?</string>
+    <string name="q1">What is the difference between a relapse and an reinfection?</string>
+    <string name="q2">If our bodies produce antibodies, shouldn\'t we not experience a reinfection?</string>
+    <string name="q3">Should I take a lot of vitamins to help strengthen my immune system?</string>
     <string name="q4">How effective is wearing a mask in general?</string>
     <string name="q5">How effective are cotton masks?</string>
-    <string name="q6">Does taking a lot of vitamins help strengthen my immune system?</string>
-    <string name="q7">Can we get sick after recovering from the virus?</string>
+    <string name="q6">Why is this virus so deadly to the elderly?</string>
+    <string name="q7">By which means the virus penetrates the body?</string>
+
+    <string name="a1">Relapse is when the virus gets treated, the symptoms go away, and the patient even tests negative. But it\'s just that the number of virus copied is so small that the PCR test kit can\'t detect it. Usually you need 3,000 copies of the virus for you to test positive. If there is less than that, the test comes out as negative, even if you still have the virus... So after you get discharged, the virus will replicate again, an when it goes up from 3,000 to 5000 you will get the symptoms again so that is what relapse is... But reinfection is when you completely get rid of the virus from your body, but then get reinfected by another person with the Covid19 virus again.</string>
+    <string name="a2">That\’s the part that isn\'t crystal clear. But there are studies that show that after you get infected with Covid-19,your body normally starts producing antibodies by the end of the first week. And after 2 to 3 weeks, most infectees of course there are exceptions, but more than 90% of people produce those antibodies, and we need to check whether they\'re producing antibodies that actually prevent reinfection. Out of the different types of antibodies, we need the specific antibodies that attack the virus spike proteins to neutralize the virus. Only they can prevent reinfection.</string>
+    <string name="a3">No. Most people just think having a strong immune system just means being healthy. But to have immunity against Covid19, you need the specific neutralizing antibodies. If you have them, that means you have immunity to it. Most people don\'t have them. Unless you recovered from Covid9 or are currently fighting it off right now, you don\'t have immunity against it that\'s why you can get infected easily.</string>
+    <string name="a4">It\’s definitely effective. According to research, medical professionals wearing masks have a significantly lower chance of getting infected than those who don\'t.</string>
+    <string name="a5">In theory, a mask is supposed to protect us from the droplets of a size of microns or bigger from others coughing or sneezing. But these droplets can penetrate through cotton. In the end, wearing a cotton mask is better than nothing, but it\'s not as effective as the medical grade masks we recommend. Because the small gap in the cotton, also it\’s not fluid resistant it gets wet.</string>
+    <string name="a6">Covid19 is a new virus; the only thing that can fight the virus is your own immune system. If you\'re over 60 your immune system deteriorates. It is called immunosenescence. the virus can lead to pneumonia or inflammation all over the body, the virus can put the elderly in critical states and increase the chances of death. Also those with chronic medical conditions are another high risk group. Even if they\’re under 60, if they have any cardiovascular problems, a chronic lung condition, or are smokers.</string>
+    <string name="a7">You can get infected through your eyes, nose and mouth because they are mucous membranes inside them. It\’s inside your eyelids and nose. The same goes for your mouth. The virus can\'t go through the skin. These mucous membranes have a receptor called ACE2. The virus has to stick to those receptors. We don\'t have receptors on our skin. Our skin actually acts as a sort of a barrier. The virus cannot go through your ears.</string>
 </resources>

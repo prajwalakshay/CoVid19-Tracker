@@ -10,7 +10,7 @@
     </string-array>
     <string name="question1">Qu\'est ce qu\'un Coronavirus?</string>
     <string name="question2">Quels sont les symptômes de la COVID-19 ?</string>
-    <string name="question3">Comment la COVID-19 se propage-t-elle ?</string>
+    <string name="question3">Comment la COVID-19 se propage ?</string>
     <string name="question4">Comment puis-je me protéger et éviter que la maladie ne se propage ?</string>
     <string name="question5">Quelle est la probabilité de contracter la COVID-19 ?</string>
     <string name="question6">La COVID-19 doit-elle m’inquiéter ?</string>
@@ -150,7 +150,7 @@ Si vous pensez qu’une surface peut être infectée, nettoyez-la avec un désin
     <string name="focus_on_wrist">Lavez le poignet</string>
     <string name="wash_hands">Lavez-vous les mains</string>
 
-    <string name="risk">Qui sont les personnes le plus à risque?</string>
+    <string name="risk">Qui sont les personnes les plus à risques?\n(Taux de mortalité par tranche d\'âge)</string>
     <string name="_0_9">0-9 ans</string>
     <string name="age2">10-19 ans</string>
     <string name="age3">20-29 ans</string>
@@ -197,13 +197,23 @@ Ces symptômes sont comparables à ceux de la grippe (influenza) ou d’un rhume
     <string name="brought_you_by_shidtech">ShidTech</string>
 
     <string name="frequently">Foires aux Questions</string>
-    <string name="frequent">L\'éminent Professeur Woo Joo Kim a répondu à certaines questions à propos du Covid-19.</string>
+    <string name="frequent">L\'éminent Professeur Woo Joo Kim, l\'un des plus grands spécialiste au sujet du virus a répondu à certaines questions à propos du Covid-19.\n\nAppuyez sur les questions ci-dessous pour voir les réponses</string>
 
-    <string name="q1">How can we get infected?</string>
-    <string name="q2">How effective is wearing a mask in general?</string>
-    <string name="q3">Why is this virus so deadly to the elderly?</string>
-    <string name="q4">How effective is wearing a mask in general?</string>
-    <string name="q5">How effective are cotton masks?</string>
-    <string name="q6">Does taking a lot of vitamins help strengthen my immune system?</string>
-    <string name="q7">Can we get sick after recovering from the virus?</string>
+    <string name="q1">Quelle est la différence entre une rechute et une réinfection?</string>
+    <string name="q2">Si notre corps produit des anticorps, ne devrions-nous pas subir de réinfection?</string>
+    <string name="q3">Prendre beaucoup de vitamines permet-il de renforcer notre système immunitaire?</string>
+    <string name="q4">Est-ce que porter un masque aide en général?</string>
+    <string name="q5">Les masques en tissue sont-ils efficaces?</string>
+    <string name="q6">Pourquoi le virus est si mortel chez les personnes âgées?</string>
+    <string name="q7">Le virus utilise quelle partie du corps pour le pénétrer?</string>
+
+    <string name="a1">Une rechute est lorsque le virus est traité, les symptômes disparaissent, et le patient teste même négative. Mais c’est juste que le nombre de copie du virus est si petit que les kits de test ne peuvent le détecter. D’habitude il faut 3000 copies du virus afin que vous ne soyez testé positive. Si il y à moins que cela, le test sort négative, même si vous avez le virus. Donc lorsque vous sortez de l’hôpital, le virus va de nouveau se multiplier, et lorsqu’il atteindra un chiffre entre 3000 et 5000, les symptômes réapparaitront, c’est ce qu’on appelle une rechute.
+Une réinfection est lorsque vous vous débarrassez complètement du virus, mais que vous vous faite contaminé de nouveau par une autre personne atteinte du virus.
+</string>
+    <string name="a2">C’est la partie qui reste floue. Il y a des études qui montrent qu’après être infecté par le Covid19, votre corps produit des anticorps au bout de la première semaine. Mais pour éviter une réinfection il faut que votre corps produit un type particulier d’anticorps. De tous les différents types d’anticorps, nous avons besoin d’un type spécifique qui neutralise le virus. Seul ce type peut éviter une réinfection. Après deux ou trois semaines, la plupart des infectés produisent ces anticorps (plus de 90% des patients), mais il y a toujours des exceptions.</string>
+    <string name="a3">Non. Beaucoup de gens pensent qu’avoir un bon système immunitaire veut dire être en bonne santé. Mais pour avoir l’immunité contre le Covid19, vous avez besoins d’un type particulier d’anticorps. La plupart des gens ne l’ont pas. À moins que vous ne soyez guéri du Covid19, ou que vous combattez la maladie en ce moment, vous n’avez pas d’immunité contre le virus, c’est la raison pour laquelle vous pouvez être contaminé rapidement.</string>
+    <string name="a4">Oui absolument. D’après des études, les personnels médicaux qui portent des masques ont beaucoup moins de chance d’être infecté que ceux qui n’en portent pas.</string>
+    <string name="a5">En théorie, les masques sont sensé nous protégés des gouttelettes de la taille de 5 microns ou plus provenant d’éternuement ou de toux. Mais ces gouttelettes peuvent pénétrer les tissus. En un mot, porter un masque en tissus est mieux que rien, mais ce n’est pas aussi efficace qu’un masque chirurgical. En raison des petits trous présents dans un tissu et du fait qu’ils ne sont pas résistants aux fluides, ils peuvent être mouillés.</string>
+    <string name="a6">Le covid19 est un nouveau virus, la seule chose actuellement qui peut combattre le virus est votre propre système immunitaire. Si vous êtes au-delà des 60 ans votre système immunitaire se détériore. C’est ce qu’on appelle l’immunosénescence. Aussi, les personnes atteintes d’autres maladies sont à risque. Même si ils ont moins de 60 ans, s’ils ont des problèmes cardiovasculaires, des soucis au niveau des poumons, ou si ils sont fumeurs.</string>
+    <string name="a7">Vous pouvez vous faire infecter par les yeux, nez et votre bouche parce qu’il y a des membranes muqueuses qui y résident. Le virus ne pénètre pas par la peau. Ces membranes ont un récepteur appelé ACE2. Le virus doit  se coller à un de ces récepteurs. Nous n’avons pas ces récepteurs sur notre peau. Notre peau agit un peu comme une barrière. Le virus ne peut pas pénétrer a travers les oreilles.</string>
 </resources>
